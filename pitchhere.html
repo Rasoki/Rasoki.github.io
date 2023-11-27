@@ -101,7 +101,7 @@
             <!-- <li <?php if ($this->uri->segment(1) == 'partnership'): echo "class='active'";endif;?>><a href="<?php echo base_url('partnership'); ?>">Partnership</a></li> -->
             <li><a href="aboutus.html">About Us</a></li>
             <li><a href="team.html">The Team</a></li>
-            <li><a href="pitchhere.html">Pitch Here</a></li>
+            <li class="active"><a href="pitchhere.html">Pitch Here</a></li>
             <!-- <li <?php if ($this->uri->segment(1) == 'gotcha'): echo "class='active'";endif;?>><a href="<?php echo base_url('gotcha'); ?>">Gotcha</a></li> -->
           </ul>
         </div>
@@ -120,13 +120,13 @@
           </div>
           <div class="header-display">
             <ul>
-              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <!-- <li <?php if ($this->uri->segment(1) == 'ventures'): echo "class='active'";endif;?>><a href="<?php echo base_url('ventures'); ?>">Ventures</a></li> -->
               <li><a href="investments.html">Investments</a></li>
               <!-- <li <?php if ($this->uri->segment(1) == 'partnership'): echo "class='active'";endif;?>><a href="<?php echo base_url('partnership'); ?>">Partnership</a></li> -->
               <li><a href="aboutus.html">About Us</a></li>
               <li><a href="team.html">The Team</a></li>
-              <li><a href="pitchhere.html">Pitch Here</a></li>
+              <li class="active"><a href="pitchhere.html">Pitch Here</a></li>
               <!-- <li <?php if ($this->uri->segment(1) == 'gotcha'): echo "class='active'";endif;?>><a href="<?php echo base_url('gotcha'); ?>">Gotcha</a></li> -->
             </ul>
           </div>
@@ -138,16 +138,29 @@
     <section class="section section1 section-full">
       <div
         class="section-full parallax-background"
-        style="background-image: url('assets/dist/img/bg-section1.png')"
+        style="
+          background-image: url('assets/dist/img/bg-section1-pitch.png');
+          background-position: top;
+        "
       >
         <div class="welcome-wrapper">
-          <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+          <div class="container">
             <div class="col-md-12 padding-0">
               <div class="welcome-content-wrapper">
-                <div class="title">
-                  <div class="red">We help you</div>
-                  <br class="visible-xs" />
-                  to expand
+                <div class="col-md-6">
+                  <div class="title title-left title-pitch">
+                    <div class="red">Send Us</div>
+                    <br />
+                    <div class="red margin-left">your Pitch</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <p class="subtitle margin-top-20">
+                    OCBC Ventura is looking to<br class="hidden-xs" />
+                    back entrepreneurs in becoming<br class="hidden-xs" />
+                    the change-makers<br class="hidden-xs" />
+                    in Indonesia’s digital ecosystem
+                  </p>
                 </div>
               </div>
             </div>
@@ -155,120 +168,21 @@
         </div>
       </div>
     </section>
-    <!-- <section class="section section2">
-        <div class="container">
-            <div class="home-about-us-wrapper">
-                <div class="home-about-us-content-wrapper">
-                    <div class="col-md-7 col-sm-9 left-wrapper" style="background-image: url('assets/dist/img/bg-home-onvic.jpg');"></div>
-                    <div class="col-md-5 col-sm-3 right-wrapper hidden-xs"></div>
-                    <div class="home-about-us-content">
-                        <div class="col-sm-6 left-content hidden-xs"></div>
-                        <div class="col-sm-6 right-content" style="background-color: rgba(133, 1, 24, .8);">
-                            <p class="title">ONVic</p>
-                            <div class="copy margin-bottom-10">
-                                <p>The OCBC NISP Ventura Investment Competition (ONVic) Roadshow is a nationwide investment competition for Indonesian students in Indonesia or abroad. Through this competition, we want to unleash your competence in reading the market and building successful startups in the future.</p>
-                                <p><a href="https://bit.ly/AboutONVic" style="color: #fff; font-weight: bold;">Click here</a> for more information</p>
-                            </div>
-                            <a href="https://bit.ly/ONVicRegistration">
-                                <button type="button" class="btn btn-about"><span>REGISTER HERE</span></button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <section class="section section3">
-      <div class="container">
-        <div class="home-about-us-wrapper">
-          <div class="home-about-us-content-wrapper">
-            <div
-              class="col-md-7 col-sm-9 left-wrapper"
-              style="
-                background-image: url('assets/dist/img/bg-home-about-us.jpg');
-              "
-            ></div>
-            <div class="col-md-5 col-sm-3 right-wrapper hidden-xs"></div>
-            <div class="home-about-us-content">
-              <div class="col-sm-6 left-content hidden-xs"></div>
-              <div class="col-sm-6 right-content">
-                <p class="title">About Us</p>
-                <p class="copy margin-bottom-10">
-                  OCBC Ventura is a venture capital arm of PT Bank OCBC NISP
-                  Tbk, part of OCBC group. We are looking to back entrepreneurs
-                  in becoming the change-makers in Indonesia’s digital
-                  ecosystem. Our goal is to leverage the group extensive
-                  network, financial expertise, customers reach, and combine it
-                  with the agility and out-of the box idea from startup to
-                  create endless possibilities.
-                </p>
-
-                <a href="aboutus.html">
-                  <button type="button" class="btn btn-about">
-                    <span>MORE ABOUT US</span>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- <section class="section section3">
-        <div class="bg-helper-section3">
-            <div class="col-sm-6 helper-left"></div>
-            <div class="col-sm-6 helper-right"></div>
-        </div>
-        <div class="container">
-            <div class="home-our-investment-wrapper">
-                <div class="home-our-investment-content-wrapper">
-                    <div class="col-md-5 col-sm-3 left-wrapper hidden-xs"></div>
-                    <div class="col-md-7 col-sm-9 right-wrapper" style="background-image: url('assets/dist/img/bg-home-our-investment.jpg');">
-                    </div>
-                    <div class="home-our-investment-content">
-                        <div class="col-sm-6 left-content">
-                            <p class="title">Our Investments</p>
-                            <p class="copy black margin-bottom-10">We are building the future by investing in startups to create a better tomorrow</p>
-                            <p class="copy">We are committed to support innovation and technological transformation through direct investments on startups, early-stage, and growth-stage companies in Indonesia.</p>
-
-                            <a href="<?php echo base_url('investments'); ?>">
-                                <button type="button" class="btn btn-investment"><span>OUR PORTFOLIO</span></button>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 right-content hidden-xs"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <section class="section section4">
-      <div class="container">
-        <div class="home-partner-with-us-wrapper">
-          <div class="home-partner-with-us-content-wrapper">
-            <div
-              class="col-md-7 col-sm-9 left-wrapper"
-              style="
-                background-image: url('assets/dist/img/bg-home-partner-with-us.jpg');
-              "
-            ></div>
-            <div class="col-md-5 col-sm-3 right-wrapper hidden-xs"></div>
-            <div class="home-partner-with-us-content">
-              <div class="col-sm-6 left-content hidden-xs"></div>
-              <div class="col-sm-6 right-content">
-                <p class="title">Partner with Us</p>
-                <p class="copy black margin-bottom-10">
-                  Collaborate with us to create<br
-                    class="hidden-sm hidden-xs"
-                  />
-                  the next revolutionary digital ecosystem beyond banking
-                </p>
-
-                <a href="partnership.html">
-                  <button type="button" class="btn btn-about">
-                    <span>MORE ABOUT US</span>
-                  </button>
-                </a>
-              </div>
+    <section class="section section7">
+      <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+        <div class="pitch-form-container">
+          <div class="pitch-form-wrapper">
+            <div class="pitch-form-title-wrapper">
+              <!-- <div class="alert alert-success" role="alert">
+                            <strong class="d-block d-sm-inline-block-force"></strong>
+                            </div> -->
+              <p class="title">
+                We want to partner with entrepreneurs that are looking to
+                embrace their passion and eliminate the impossible. Send us your
+                game-changing idea to our email:
+                <a href="mailto:hello@ocbcventura.com">hello@ocbcventura.com</a>
+                !
+              </p>
             </div>
           </div>
         </div>

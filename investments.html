@@ -95,9 +95,9 @@
         </div>
         <div id="navbar">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <!-- <li><a href="ventures.html">Ventures</a></li> -->
-            <li><a href="investments.html">Investments</a></li>
+            <li class="active"><a href="investments.html">Investments</a></li>
             <!-- <li <?php if ($this->uri->segment(1) == 'partnership'): echo "class='active'";endif;?>><a href="<?php echo base_url('partnership'); ?>">Partnership</a></li> -->
             <li><a href="aboutus.html">About Us</a></li>
             <li><a href="team.html">The Team</a></li>
@@ -120,9 +120,9 @@
           </div>
           <div class="header-display">
             <ul>
-              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <!-- <li <?php if ($this->uri->segment(1) == 'ventures'): echo "class='active'";endif;?>><a href="<?php echo base_url('ventures'); ?>">Ventures</a></li> -->
-              <li><a href="investments.html">Investments</a></li>
+              <li class="active"><a href="investments.html">Investments</a></li>
               <!-- <li <?php if ($this->uri->segment(1) == 'partnership'): echo "class='active'";endif;?>><a href="<?php echo base_url('partnership'); ?>">Partnership</a></li> -->
               <li><a href="aboutus.html">About Us</a></li>
               <li><a href="team.html">The Team</a></li>
@@ -138,16 +138,27 @@
     <section class="section section1 section-full">
       <div
         class="section-full parallax-background"
-        style="background-image: url('assets/dist/img/bg-section1.png')"
+        style="
+          background-image: url('assets/dist/img/bg-section1-investment.png');
+        "
       >
         <div class="welcome-wrapper">
-          <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+          <div class="container">
             <div class="col-md-12 padding-0">
               <div class="welcome-content-wrapper">
-                <div class="title">
-                  <div class="red">We help you</div>
-                  <br class="visible-xs" />
-                  to expand
+                <div class="col-md-6">
+                  <div class="title title-left">
+                    <div class="red">Our Investments</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <p class="subtitle">
+                    Starting the journey with entrepeneurs<br
+                      class="hidden-xs"
+                    />
+                    to fulfill their goals,<br class="hidden-xs" />
+                    and eliminating the impossible
+                  </p>
                 </div>
               </div>
             </div>
@@ -155,121 +166,224 @@
         </div>
       </div>
     </section>
-    <!-- <section class="section section2">
-        <div class="container">
-            <div class="home-about-us-wrapper">
-                <div class="home-about-us-content-wrapper">
-                    <div class="col-md-7 col-sm-9 left-wrapper" style="background-image: url('assets/dist/img/bg-home-onvic.jpg');"></div>
-                    <div class="col-md-5 col-sm-3 right-wrapper hidden-xs"></div>
-                    <div class="home-about-us-content">
-                        <div class="col-sm-6 left-content hidden-xs"></div>
-                        <div class="col-sm-6 right-content" style="background-color: rgba(133, 1, 24, .8);">
-                            <p class="title">ONVic</p>
-                            <div class="copy margin-bottom-10">
-                                <p>The OCBC NISP Ventura Investment Competition (ONVic) Roadshow is a nationwide investment competition for Indonesian students in Indonesia or abroad. Through this competition, we want to unleash your competence in reading the market and building successful startups in the future.</p>
-                                <p><a href="https://bit.ly/AboutONVic" style="color: #fff; font-weight: bold;">Click here</a> for more information</p>
-                            </div>
-                            <a href="https://bit.ly/ONVicRegistration">
-                                <button type="button" class="btn btn-about"><span>REGISTER HERE</span></button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <section class="section section3">
+    <section class="section section5">
       <div class="container">
-        <div class="home-about-us-wrapper">
-          <div class="home-about-us-content-wrapper">
-            <div
-              class="col-md-7 col-sm-9 left-wrapper"
-              style="
-                background-image: url('assets/dist/img/bg-home-about-us.jpg');
-              "
-            ></div>
-            <div class="col-md-5 col-sm-3 right-wrapper hidden-xs"></div>
-            <div class="home-about-us-content">
-              <div class="col-sm-6 left-content hidden-xs"></div>
-              <div class="col-sm-6 right-content">
-                <p class="title">About Us</p>
-                <p class="copy margin-bottom-10">
-                  OCBC Ventura is a venture capital arm of PT Bank OCBC NISP
-                  Tbk, part of OCBC group. We are looking to back entrepreneurs
-                  in becoming the change-makers in Indonesia’s digital
-                  ecosystem. Our goal is to leverage the group extensive
-                  network, financial expertise, customers reach, and combine it
-                  with the agility and out-of the box idea from startup to
-                  create endless possibilities.
+        <div class="ventures-porto-wrapper">
+          <div class="ventures-porto-content-wrapper">
+            <div class="ventures-porto-content col-md-4 col-sm-6 col-xs-12">
+              <img
+                src="https://strgonelabsdev.blob.core.windows.net/ndv-ventura/Logo_AwanTunai.png"
+                class="ventures-porto-img"
+              />
+              <div class="ventures-copy">
+                <p class="title">Awan Tunai</p>
+                <p class="copy">
+                  AwanTunai is digitizing the traditional FMCG supply chain and
+                  providing low cost inventory purchase financing for micro SME
+                  merchants.
                 </p>
-
-                <a href="aboutus.html">
-                  <button type="button" class="btn btn-about">
-                    <span>MORE ABOUT US</span>
-                  </button>
-                </a>
+                <a
+                  href="https://www.rukita.co/"
+                  class="btn-ventures"
+                  target="_blank"
+                  >VIEW WEBSITE</a
+                >
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- <section class="section section3">
-        <div class="bg-helper-section3">
-            <div class="col-sm-6 helper-left"></div>
-            <div class="col-sm-6 helper-right"></div>
-        </div>
-        <div class="container">
-            <div class="home-our-investment-wrapper">
-                <div class="home-our-investment-content-wrapper">
-                    <div class="col-md-5 col-sm-3 left-wrapper hidden-xs"></div>
-                    <div class="col-md-7 col-sm-9 right-wrapper" style="background-image: url('assets/dist/img/bg-home-our-investment.jpg');">
-                    </div>
-                    <div class="home-our-investment-content">
-                        <div class="col-sm-6 left-content">
-                            <p class="title">Our Investments</p>
-                            <p class="copy black margin-bottom-10">We are building the future by investing in startups to create a better tomorrow</p>
-                            <p class="copy">We are committed to support innovation and technological transformation through direct investments on startups, early-stage, and growth-stage companies in Indonesia.</p>
-
-                            <a href="<?php echo base_url('investments'); ?>">
-                                <button type="button" class="btn btn-investment"><span>OUR PORTFOLIO</span></button>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 right-content hidden-xs"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <section class="section section4">
-      <div class="container">
-        <div class="home-partner-with-us-wrapper">
-          <div class="home-partner-with-us-content-wrapper">
-            <div
-              class="col-md-7 col-sm-9 left-wrapper"
-              style="
-                background-image: url('assets/dist/img/bg-home-partner-with-us.jpg');
-              "
-            ></div>
-            <div class="col-md-5 col-sm-3 right-wrapper hidden-xs"></div>
-            <div class="home-partner-with-us-content">
-              <div class="col-sm-6 left-content hidden-xs"></div>
-              <div class="col-sm-6 right-content">
-                <p class="title">Partner with Us</p>
-                <p class="copy black margin-bottom-10">
-                  Collaborate with us to create<br
-                    class="hidden-sm hidden-xs"
-                  />
-                  the next revolutionary digital ecosystem beyond banking
+            <div class="ventures-porto-content col-md-4 col-sm-6 col-xs-12">
+              <img
+                src="https://strgonelabsdev.blob.core.windows.net/ndv-ventura/Logo_Dekoruma.png"
+                class="ventures-porto-img"
+              />
+              <div class="ventures-copy">
+                <p class="title">Dekoruma</p>
+                <p class="copy">
+                  Dekoruma is a full stack cloud platform making your dream home
+                  effortlessly with full transparency through home furnishing
+                  retail & interior design.
                 </p>
-
-                <a href="partnership.html">
-                  <button type="button" class="btn btn-about">
-                    <span>MORE ABOUT US</span>
-                  </button>
-                </a>
+                <a
+                  href="https://www.dekoruma.com/"
+                  class="btn-ventures"
+                  target="_blank"
+                  >VIEW WEBSITE</a
+                >
               </div>
             </div>
+            <div class="ventures-porto-content col-md-4 col-sm-6 col-xs-12">
+              <img
+                src="https://strgonelabsdev.blob.core.windows.net/ndv-ventura/Logo_Edenfarm.png"
+                class="ventures-porto-img"
+              />
+              <div class="ventures-copy">
+                <p class="title">Edenfarm</p>
+                <p class="copy">
+                  EdenFarm is an agritech startup that supplies locally-produced
+                  food ingredients to culinary businesses in major cities in
+                  Indonesia.
+                </p>
+                <a
+                  href="https://www.edenfarm.id/"
+                  class="btn-ventures"
+                  target="_blank"
+                  >VIEW WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="ventures-porto-content col-md-4 col-sm-6 col-xs-12">
+              <img
+                src="https://strgonelabsdev.blob.core.windows.net/ndv-ventura/Logo_GajiGesa.png"
+                class="ventures-porto-img"
+              />
+              <div class="ventures-copy">
+                <p class="title">GajiGesa</p>
+                <p class="copy">
+                  GajiGesa is a preferred financial wellness partner for
+                  employers in Indonesia, built to support hard-working
+                  Indonesians to have control over their capital.
+                </p>
+                <a
+                  href="https://gajigesa.com/"
+                  class="btn-ventures"
+                  target="_blank"
+                  >VIEW WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="ventures-porto-content col-md-4 col-sm-6 col-xs-12">
+              <img
+                src="https://strgonelabsdev.blob.core.windows.net/ndv-ventura/logo-idn.png"
+                class="ventures-porto-img"
+              />
+              <div class="ventures-copy">
+                <p class="title">IDN Media</p>
+                <p class="copy">
+                  IDN Media is the one-stop media platform for millennials and
+                  Gen Z with a vision to democratize information for every
+                  Indonesia.
+                </p>
+                <a
+                  href="https://www.idn.media/"
+                  class="btn-ventures"
+                  target="_blank"
+                  >VIEW WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="ventures-porto-content col-md-4 col-sm-6 col-xs-12">
+              <img
+                src="https://strgonelabsdev.blob.core.windows.net/ndv-ventura/Logo_Kiddo.id.png"
+                class="ventures-porto-img"
+              />
+              <div class="ventures-copy">
+                <p class="title">Kiddo.id</p>
+                <p class="copy">
+                  Kiddo.id is an edutech platform to help kids reach their
+                  maximum potential.
+                </p>
+                <a href="https://kiddo.id/" class="btn-ventures" target="_blank"
+                  >VIEW WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="ventures-porto-content col-md-4 col-sm-6 col-xs-12">
+              <img
+                src="https://strgonelabsdev.blob.core.windows.net/ndv-ventura/Logo_Prospeku.png"
+                class="ventures-porto-img"
+              />
+              <div class="ventures-copy">
+                <p class="title">Prospeku</p>
+                <p class="copy">
+                  Prospeku is a proptech platform for property agents to manage
+                  and market their listings more efficiently.
+                </p>
+                <a
+                  href="https://prospeku.com/"
+                  class="btn-ventures"
+                  target="_blank"
+                  >VIEW WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="ventures-porto-content col-md-4 col-sm-6 col-xs-12">
+              <img
+                src="https://strgonelabsdev.blob.core.windows.net/ndv-ventura/Logo_Rukita.png"
+                class="ventures-porto-img"
+              />
+              <div class="ventures-copy">
+                <p class="title">Rukita</p>
+                <p class="copy">
+                  Rukita is Indonesia’s fastest-growing co-living company that
+                  provides quality and hassle-free living experience for
+                  urbanites.
+                </p>
+                <a
+                  href="https://www.awantunai.co.id"
+                  class="btn-ventures"
+                  target="_blank"
+                  >VIEW WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="ventures-porto-content col-md-4 col-sm-6 col-xs-12">
+              <img
+                src="https://strgonelabsdev.blob.core.windows.net/ndv-ventura/Logo_SIRCLO.png"
+                class="ventures-porto-img"
+              />
+              <div class="ventures-copy">
+                <p class="title">Sirclo</p>
+                <p class="copy">
+                  Indonesia’s leading e-commerce solution that empowers
+                  businesses to sell online through SIRCLO Store, a SaaS
+                  platform and SIRCLO Commerce, an e-commerce enabler.
+                </p>
+                <a
+                  href="https://www.sirclo.com/blog/ide-bisnis/"
+                  class="btn-ventures"
+                  target="_blank"
+                  >VIEW WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="ventures-porto-content col-md-4 col-sm-6 col-xs-12">
+              <img
+                src="https://strgonelabsdev.blob.core.windows.net/ndv-ventura/logo-uss.png"
+                class="ventures-porto-img"
+              />
+              <div class="ventures-copy">
+                <p class="title">USS Networks</p>
+                <p class="copy">
+                  USS Networks is a content network company engaged in
+                  contemporary lifestyle rooted in youth culture.
+                </p>
+                <a
+                  href="https://www.ussnetworks.com/"
+                  class="btn-ventures"
+                  target="_blank"
+                  >VIEW WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="ventures-porto-content col-md-4 col-sm-6 col-xs-12">
+              <img
+                src="https://strgonelabsdev.blob.core.windows.net/ndv-ventura/Logo_Workfit.png"
+                class="ventures-porto-img"
+              />
+              <div class="ventures-copy">
+                <p class="title">Workfit</p>
+                <p class="copy">
+                  Workfit is a SaaS suite for self and partially insured
+                  companies that allows automation of health claims.
+                </p>
+                <a
+                  href="https://www.claim.fit/"
+                  class="btn-ventures"
+                  target="_blank"
+                  >VIEW WEBSITE</a
+                >
+              </div>
+            </div>
+            <div class="boxPaging" style="width: 100%"></div>
           </div>
         </div>
       </div>
